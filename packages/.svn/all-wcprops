@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/rtnowcnxn/!svn/ver/1173/trunk/AES.Oracle.RightNow.Connector/packages
+END
+log4net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/packages/log4net.dll
+END
+WebSocket4Net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/packages/WebSocket4Net.dll
+END
+repositories.config
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/packages/repositories.config
+END

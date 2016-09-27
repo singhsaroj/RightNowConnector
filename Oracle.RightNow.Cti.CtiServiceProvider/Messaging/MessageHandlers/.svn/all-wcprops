@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers
+END
+IMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/IMessageHandler.cs
+END
+InteractionRequestMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/InteractionRequestMessageHandler.cs
+END
+ConnectMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/ConnectMessageHandler.cs
+END
+DisconnectMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/DisconnectMessageHandler.cs
+END
+DeviceInfoMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/DeviceInfoMessageHandler.cs
+END
+AgentStateMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/AgentStateMessageHandler.cs
+END
+GetSwitchStateMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/GetSwitchStateMessageHandler.cs
+END
+CreateInteractionMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/CreateInteractionMessageHandler.cs
+END
+InteractionTransferMessageHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageHandlers/InteractionTransferMessageHandler.cs
+END

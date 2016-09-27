@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common
+END
+RightNowCustomObjectFieldAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/RightNowCustomObjectFieldAttribute.cs
+END
+NotifyingObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/NotifyingObject.cs
+END
+ExceptionHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/ExceptionHelper.cs
+END
+Global.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Global.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/app.config
+END
+PasswordHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/PasswordHelper.cs
+END
+RightNowObjectProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/rtnowcnxn/!svn/ver/1173/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/RightNowObjectProvider.cs
+END
+RightNow.AddIns.AddInViews.dll
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/RightNow.AddIns.AddInViews.dll
+END
+ScreenPopConfig.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/ScreenPopConfig.cs
+END
+Oracle.RightNow.Cti.Common.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/rtnowcnxn/!svn/ver/1177/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Oracle.RightNow.Cti.Common.csproj
+END
+RightNowCustomObjectAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/RightNowCustomObjectAttribute.cs
+END

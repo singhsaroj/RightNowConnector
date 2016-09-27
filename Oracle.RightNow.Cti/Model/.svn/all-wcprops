@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model
+END
+LoginReasonCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/LoginReasonCode.cs
+END
+CallType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/CallType.cs
+END
+SwitchCredentials.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/SwitchCredentials.cs
+END
+LoginCredentialInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/LoginCredentialInfo.cs
+END
+InteractionState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/InteractionState.cs
+END
+MediaType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/MediaType.cs
+END
+TransferResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/TransferResult.cs
+END
+ScreenPopConfig.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/ScreenPopConfig.cs
+END
+ICall.cs
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/ICall.cs
+END
+LocationInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/LocationInfo.cs
+END
+AgentSwitchMode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/AgentSwitchMode.cs
+END
+CtiNotification.cs
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/CtiNotification.cs
+END
+IInteraction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/IInteraction.cs
+END
+InteractionBlindType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/InteractionBlindType.cs
+END
+Contact.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/Contact.cs
+END
+InteractionCredentials.cs
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/InteractionCredentials.cs
+END
+AgentState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/AgentState.cs
+END
+IEmail.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/IEmail.cs
+END
+IWebIncident.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/IWebIncident.cs
+END
+StandardErrorCode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/StandardErrorCode.cs
+END
+AgentWorkMode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/AgentWorkMode.cs
+END
+IDevice.cs
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/IDevice.cs
+END
+TransferTypes.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Model/TransferTypes.cs
+END

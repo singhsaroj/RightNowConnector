@@ -1,0 +1,79 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti", "Oracle.RightNow.Cti\Oracle.RightNow.Cti.csproj", "{D455F9A5-1A6A-4761-9268-50EB8D87F94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.MediaBar", "Oracle.RightNow.Cti.MediaBar\Oracle.RightNow.Cti.MediaBar.csproj", "{86B55D68-5A9B-4575-B80D-E72133186DCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.Administration", "Oracle.RightNow.Cti.Administration\Oracle.RightNow.Cti.Administration.csproj", "{4B1CD259-7284-49C2-B546-D62752ABA264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.Providers.CtiServiceProvider", "Oracle.RightNow.Cti.Providers.CtiServiceProvider\Oracle.RightNow.Cti.Providers.CtiServiceProvider.csproj", "{30CCAC2F-3F9C-4E1D-916A-0DE3695A0F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.CtiServiceProvider", "Oracle.RightNow.Cti.CtiServiceProvider\Oracle.RightNow.Cti.CtiServiceProvider.csproj", "{36925B77-D83A-471A-8037-EFE25324527E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.ScreenPopHandlers.Samples", "Oracle.RightNow.Cti.ScreenPopHandlers.Samples\Oracle.RightNow.Cti.ScreenPopHandlers.Samples.csproj", "{167296B6-07CA-4632-B837-709A64C97603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.CtiServiceLibrary", "Oracle.RightNow.Cti.CtiServiceLibrary\Oracle.RightNow.Cti.CtiServiceLibrary.csproj", "{3928141F-82E4-40CE-95D8-A574177B2131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.ScreenPopConfiguration", "Oracle.RightNow.Cti.ScreenPopConfiguration\Oracle.RightNow.Cti.ScreenPopConfiguration.csproj", "{1C2CF2C8-EA16-4A8F-9714-49EDC60CAFFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.Common", "Oracle.RightNow.Cti.Common\Oracle.RightNow.Cti.Common.csproj", "{EB0C6E3B-758F-4C69-BA28-D76AB8ABAFBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.ClickToDail", "Oracle.RightNow.Cti.ClickToDail\Oracle.RightNow.Cti.ClickToDail.csproj", "{FC145A8E-2D9F-4BEB-A021-0F53284EFC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle.RightNow.Cti.Logger", "Oracle.RightNow.Cti.Logger\Oracle.RightNow.Cti.Logger.csproj", "{057D5517-9257-4400-ACED-B99555701138}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D455F9A5-1A6A-4761-9268-50EB8D87F94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D455F9A5-1A6A-4761-9268-50EB8D87F94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D455F9A5-1A6A-4761-9268-50EB8D87F94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D455F9A5-1A6A-4761-9268-50EB8D87F94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B55D68-5A9B-4575-B80D-E72133186DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B55D68-5A9B-4575-B80D-E72133186DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B55D68-5A9B-4575-B80D-E72133186DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B55D68-5A9B-4575-B80D-E72133186DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B1CD259-7284-49C2-B546-D62752ABA264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B1CD259-7284-49C2-B546-D62752ABA264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B1CD259-7284-49C2-B546-D62752ABA264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B1CD259-7284-49C2-B546-D62752ABA264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CCAC2F-3F9C-4E1D-916A-0DE3695A0F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CCAC2F-3F9C-4E1D-916A-0DE3695A0F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CCAC2F-3F9C-4E1D-916A-0DE3695A0F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CCAC2F-3F9C-4E1D-916A-0DE3695A0F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36925B77-D83A-471A-8037-EFE25324527E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36925B77-D83A-471A-8037-EFE25324527E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36925B77-D83A-471A-8037-EFE25324527E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36925B77-D83A-471A-8037-EFE25324527E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{167296B6-07CA-4632-B837-709A64C97603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167296B6-07CA-4632-B837-709A64C97603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167296B6-07CA-4632-B837-709A64C97603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167296B6-07CA-4632-B837-709A64C97603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3928141F-82E4-40CE-95D8-A574177B2131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3928141F-82E4-40CE-95D8-A574177B2131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3928141F-82E4-40CE-95D8-A574177B2131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3928141F-82E4-40CE-95D8-A574177B2131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2CF2C8-EA16-4A8F-9714-49EDC60CAFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2CF2C8-EA16-4A8F-9714-49EDC60CAFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2CF2C8-EA16-4A8F-9714-49EDC60CAFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2CF2C8-EA16-4A8F-9714-49EDC60CAFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB0C6E3B-758F-4C69-BA28-D76AB8ABAFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0C6E3B-758F-4C69-BA28-D76AB8ABAFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0C6E3B-758F-4C69-BA28-D76AB8ABAFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0C6E3B-758F-4C69-BA28-D76AB8ABAFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC145A8E-2D9F-4BEB-A021-0F53284EFC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC145A8E-2D9F-4BEB-A021-0F53284EFC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC145A8E-2D9F-4BEB-A021-0F53284EFC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC145A8E-2D9F-4BEB-A021-0F53284EFC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057D5517-9257-4400-ACED-B99555701138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057D5517-9257-4400-ACED-B99555701138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057D5517-9257-4400-ACED-B99555701138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057D5517-9257-4400-ACED-B99555701138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

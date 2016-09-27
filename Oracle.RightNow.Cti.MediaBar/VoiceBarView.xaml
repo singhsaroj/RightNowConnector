@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="Oracle.RightNow.Cti.MediaBar.VoiceBarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:converters="clr-namespace:Oracle.RightNow.Cti.MediaBar.Converters"
+             xmlns:mediabar="clr-namespace:Oracle.RightNow.Cti.MediaBar;assembly=Oracle.RightNow.Cti" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="350">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Oracle.RightNow.Cti.Mediabar;component/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+            <converters:BinaryFlagToBooleanConverter x:Key="BinaryFlagToBooleanConverter"/>            
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <StackPanel Orientation="Horizontal" 
+                IsEnabled="{Binding IsCurrentInteractionActive, Converter={StaticResource BooleanToVisibilityConverter}}">
+        <Button Width="45" Height="48" Padding="0" Name="answerBtn"
+                IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.AnswerHangup}}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="{Binding AnswerHangupTooltip}"
+                Command="{Binding AnswerHangUpCallCommand}">
+            <Image  Source="{Binding AnswerHangupImage}">                
+            </Image>
+        </Button>
+        <!--<Button Width="48" Height="48" Padding="0" Name="chatBtn"
+               IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.AnswerHangup}}" 
+               Style="{DynamicResource MediaBarButtonStyle}" 
+               ToolTip="{Binding ChatToolTip}"
+                Command="{Binding ChatCallCommand}">
+            <Image Source="{Binding ChatImage}"></Image>
+        </Button>
+        <Button Width="48" Height="48" Padding="0" Name="incidentBtn"
+               IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.Chat}}" 
+               Style="{DynamicResource MediaBarButtonStyle}" 
+               ToolTip="{Binding IncidentTooltip}"
+                Command="{Binding IncidentCallCommand}">
+            <Image Source="{Binding Image}"></Image>
+        </Button>-->
+        <Button Width="45" Height="48" Padding="0"  Name="holdbtn"
+                IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.HoldRetrieve}}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="{Binding HoldRetrieveTooltip}"
+                Command="{Binding HoldRetrieveCallCommand}">
+            <Image  Source="{Binding HoldRetrieveImage}">                
+            </Image>
+        </Button>
+        <!-- Visibility="{Binding Path=IsEnabled,RelativeSource={RelativeSource Self},Converter={StaticResource HideOrDisableConverter}}"-->
+        <Button Width="45" Height="48" Padding="0" Name="btntrans"
+                IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.BlindTransfer}}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="{Binding TransferTooltip}"
+                Command="{Binding ShowTransferDialogCommand}" CommandParameter="True">
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <!--<Setter Value="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.transferblind.png" Property="Source"/>-->
+                        <Setter Value="{Binding BlindTransferImage}" Property="Source"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsEnabled,RelativeSource={RelativeSource AncestorType=Button}}" Value="False">
+                                <Setter Property="Source" Value="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.transferblinddisabled.png" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            <!--<Image Source="{Binding TransferImage}"/>
+            Binding="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.BlindTransfer}}" Value="0"
+            -->            
+        </Button>
+        <Button Width="45" Height="48" Padding="0" 
+                IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.Transfer}}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="{Binding ConsultTransferTooltip}"
+                Command="{Binding ShowTransferDialogCommand}" CommandParameter="False">
+            <!--<Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.transfer.png"/>-->           
+
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Value="{Binding TransferImage}" Property="Source"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsEnabled,RelativeSource={RelativeSource AncestorType=Button}}" Value="False">
+                                <Setter Property="Source" Value="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.transferdisabled.png" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </Button>
+        <Button Width="45" Height="48" Padding="0" 
+                IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.BlindConference}}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="{Binding ConferenceTooltip}"
+                Command="{Binding InitiateConferenceCommand}" CommandParameter="True">            
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Value="{Binding BlindConferenceImage}" Property="Source"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsEnabled,RelativeSource={RelativeSource AncestorType=Button}}" Value="False">
+                                <Setter Property="Source" Value="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.transferblinddisabled.png" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+            <!--<Image  Source="{Binding ConferenceImage}"/>-->
+        </Button>
+        <Button Width="45" Height="48" Padding="0" 
+                IsEnabled="{Binding EnabledButtons, Converter={StaticResource BinaryFlagToBooleanConverter}, ConverterParameter={x:Static mediabar:MediaBarButtons.Conference}}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="{Binding ConsultConferenceTooltip}"
+                Command="{Binding InitiateConferenceCommand}" CommandParameter="False">
+            <!--<Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.conference.png"/>-->            
+            <Image>
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Value="{Binding ConferenceImage}" Property="Source"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsEnabled,RelativeSource={RelativeSource AncestorType=Button}}" Value="False">
+                                <Setter Property="Source" Value="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.transferdisabled.png" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+        </Button>
+        <Button Width="45" Height="48" Padding="0" 
+                IsEnabled="{Binding EnableDropLastConfParty}"
+                Style="{DynamicResource MediaBarButtonStyle}" 
+                ToolTip="Drop last party from conference"
+                Command="{Binding DropLastPartyFromConferenceCommand}">
+            <Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.voice.droplastparty.png"/>
+        </Button>        
+    </StackPanel>
+</UserControl>

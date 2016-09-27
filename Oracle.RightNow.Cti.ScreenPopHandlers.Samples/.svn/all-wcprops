@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopHandlers.Samples
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopHandlers.Samples/packages.config
+END
+Oracle.RightNow.Cti.ScreenPopHandlers.Samples.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopHandlers.Samples/Oracle.RightNow.Cti.ScreenPopHandlers.Samples.csproj
+END
+SimpleScreenPopHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopHandlers.Samples/SimpleScreenPopHandler.cs
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging
+END
+MessageData.cs
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/MessageData.cs
+END
+IMessagingProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/IMessagingProvider.cs
+END
+SimpleMessagingProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/SimpleMessagingProvider.cs
+END
+RemoteMessagingProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/RemoteMessagingProvider.cs
+END
+SwitchMessageEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/SwitchMessageEventArgs.cs
+END
+SwitchMessageType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Messaging/SwitchMessageType.cs
+END

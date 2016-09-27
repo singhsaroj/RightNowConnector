@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86B55D68-5A9B-4575-B80D-E72133186DCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oracle.RightNow.Cti.MediaBar</RootNamespace>
+    <AssemblyName>Oracle.RightNow.Cti.MediaBar</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ExpressionBlendVersion>5.0.30514.0</ExpressionBlendVersion>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="RightNow.AddIns.AddInViews">
+      <HintPath>..\packages\RightNowConnectDesktop.12.5.0.1\lib\net40\RightNow.AddIns.AddInViews.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebSocket4Net">
+      <HintPath>..\Oracle.RightNow.Cti.CtiServiceLibrary\bin\Debug\WebSocket4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="ComboBoxHelper.cs" />
+    <Compile Include="Converters\AgentStateToBrushConverter.cs" />
+    <Compile Include="Converters\BinaryFlagToBooleanConverter.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\ConsoleTypeEnhancedVisibilityconvertor.cs" />
+    <Compile Include="Converters\ContactToStringConverter.cs" />
+    <Compile Include="Converters\ConferenceListVisibilityConverter.cs" />
+    <Compile Include="Converters\InteractionStateToStringConverter.cs" />
+    <Compile Include="Converters\InvertVisibilityConverter.cs" />
+    <Compile Include="Converters\LoggedInStateToImageConverter.cs" />
+    <Compile Include="Converters\MediaTypeToImageConverter.cs" />
+    <Compile Include="Converters\MediaTypeToStringConverter.cs" />
+    <Compile Include="Converters\ConsoleTypeToVisibilityConverter.cs" />
+    <Compile Include="Converters\MediaTypeToVisibilityConverter.cs" />
+    <Compile Include="MediaBarProvider.cs" />
+    <Compile Include="MediaBarElementHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MediaBarView.xaml.cs">
+      <DependentUpon>MediaBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ToastManager.cs" />
+    <Compile Include="ViewModels\AgentLoginViewModel.cs" />
+    <Compile Include="ViewModels\DelegateCommand.cs" />
+    <Compile Include="ViewModels\MediaBarViewModel.cs" />
+    <Compile Include="ViewModels\ToastViewModel.cs" />
+    <Compile Include="ViewModels\TransferDialogViewModel.cs" />
+    <Compile Include="ViewModels\UCReasonCodeViewModel.cs" />
+    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="Views\AgentLogin.xaml.cs">
+      <DependentUpon>AgentLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ToastView.xaml.cs">
+      <DependentUpon>ToastView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransferDialog.xaml.cs">
+      <DependentUpon>TransferDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UCReasonCodeView.xaml.cs">
+      <DependentUpon>UCReasonCodeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VoiceBarView.xaml.cs">
+      <DependentUpon>VoiceBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VoiceBarViewEnhanced.xaml.cs">
+      <DependentUpon>VoiceBarViewEnhanced.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MediaBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AgentLogin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ToastView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TransferDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UCReasonCodeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VoiceBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VoiceBarViewEnhanced.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Styles.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.agent.status.png" />
+    <Resource Include="Images\mediabar.disconnect.png" />
+    <Resource Include="Images\mediabar.connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oracle.RightNow.Cti.Common\Oracle.RightNow.Cti.Common.csproj">
+      <Project>{875f4a8b-dca8-4578-a6a0-2b36d68abc4a}</Project>
+      <Name>Oracle.RightNow.Cti.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oracle.RightNow.Cti.CtiServiceLibrary\Oracle.RightNow.Cti.CtiServiceLibrary.csproj">
+      <Project>{3928141f-82e4-40ce-95d8-a574177b2131}</Project>
+      <Name>Oracle.RightNow.Cti.CtiServiceLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oracle.RightNow.Cti.Logger\Oracle.RightNow.Cti.Logger.csproj">
+      <Project>{057d5517-9257-4400-aced-b99555701138}</Project>
+      <Name>Oracle.RightNow.Cti.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oracle.RightNow.Cti\Oracle.RightNow.Cti.csproj">
+      <Project>{d455f9a5-1a6a-4761-9268-50eb8d87f94d}</Project>
+      <Name>Oracle.RightNow.Cti</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.info.emailinteraction.png" />
+    <Resource Include="Images\mediabar.info.voiceinteraction.png" />
+    <Resource Include="Images\mediabar.info.webinteraction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.conference.png" />
+    <Resource Include="Images\mediabar.voice.hangup.png" />
+    <Resource Include="Images\mediabar.voice.hold.png" />
+    <Resource Include="Images\mediabar.voice.retrieve.png" />
+    <Resource Include="Images\mediabar.voice.transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.complete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.record.add.png" />
+    <Resource Include="Images\mediabar.record.remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.mediatype.email.png" />
+    <Resource Include="Images\mediabar.mediatype.voice.png" />
+    <Resource Include="Images\mediabar.mediatype.web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.dialpad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.answer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.completeconference.png" />
+    <Resource Include="Images\mediabar.voice.completetransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.droplastparty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.conference.blind.png" />
+    <Resource Include="Images\mediabar.voice.transferblind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.transferblinddisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.conference.blinddisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.conferencedisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.transferdisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mediabar.voice.chat.png" />
+    <Resource Include="Images\mediabar.voice.incident.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\mediabar.chat.png" />
+    <Content Include="Images\mediabar.incident.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)oracle*.dll" "%25USERPROFILE%25\RightNowDev\AddIns\Oracle.RightNow.Cti\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

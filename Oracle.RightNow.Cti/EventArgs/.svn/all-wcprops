@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs
+END
+InteractionEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/InteractionEventArgs.cs
+END
+TransferCompletedEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/TransferCompletedEventArgs.cs
+END
+LoginErrorEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/LoginErrorEventArgs.cs
+END
+CredentialsRequestEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/CredentialsRequestEventArgs.cs
+END
+ExtensionChangedEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/ExtensionChangedEventArgs.cs
+END
+AgentStateChangedEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/AgentStateChangedEventArgs.cs
+END
+CustomEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/CustomEventArgs.cs
+END
+InteractionStateChangedEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/EventArgs/InteractionStateChangedEventArgs.cs
+END

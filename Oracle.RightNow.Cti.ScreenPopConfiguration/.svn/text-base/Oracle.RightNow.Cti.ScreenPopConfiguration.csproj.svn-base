@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C2CF2C8-EA16-4A8F-9714-49EDC60CAFFB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oracle.RightNow.Cti.ScreenPopConfiguration</RootNamespace>
+    <AssemblyName>Oracle.RightNow.Cti.ScreenPopConfiguration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="RightNow.AddIns.AddInViews">
+      <HintPath>..\packages\RightNowConnectDesktop.12.5.0.1\lib\net40\RightNow.AddIns.AddInViews.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converters\ExpressionToVisiblity.cs" />
+    <Compile Include="Converters\ShowSaveProgressConveter.cs" />
+    <Compile Include="Entities\ScreenPopUpEntity.cs" />
+    <Compile Include="IScreenPopConfigurationContentPane.cs" />
+    <Compile Include="Model\AsyncObservableCollection.cs" />
+    <Compile Include="Model\ScreenPopConfigModel.cs" />
+    <Compile Include="NameValueViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RightNowScreenPopProvider.cs" />
+    <Compile Include="ScreenPopConfigurationContentPane.cs" />
+    <Compile Include="ScreenPopConfigurationNavigationItem.cs" />
+    <Compile Include="ScreenPopProvider.cs" />
+    <Compile Include="ViewModel\DelegateCommand.cs" />
+    <Compile Include="ViewModel\IScreenPopConfigurationViewModel.cs" />
+    <Compile Include="ViewModel\ScreenPopConfigurationViewModel.cs" />
+    <Compile Include="View\ScreenPopConfigurationView.xaml.cs">
+      <DependentUpon>ScreenPopConfigurationView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\ScreenPopStyle.xaml">
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="View\ScreenPopConfigurationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\administration.phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oracle.RightNow.Cti.Common\Oracle.RightNow.Cti.Common.csproj">
+      <Project>{eb0c6e3b-758f-4c69-ba28-d76ab8abafbf}</Project>
+      <Name>Oracle.RightNow.Cti.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oracle.RightNow.Cti.Logger\Oracle.RightNow.Cti.Logger.csproj">
+      <Project>{057d5517-9257-4400-aced-b99555701138}</Project>
+      <Name>Oracle.RightNow.Cti.Logger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "%25USERPROFILE%25\RightNowDev" 
+mkdir "%25USERPROFILE%25\RightNowDev\AddIns" 
+mkdir "%25USERPROFILE%25\RightNowDev\AddIns\Oracle.RightNow.Cti.ScreenPopConfiguration"  
+copy /Y "$(TargetDir)oracle*.*" "%25USERPROFILE%25\RightNowDev\AddIns\Oracle.RightNow.Cti.ScreenPopConfiguration\"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

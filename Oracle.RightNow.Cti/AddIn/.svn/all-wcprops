@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AddIn
+END
+ChatAddIns.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AddIn/ChatAddIns.cs
+END
+ClickToDialAddin.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AddIn/ClickToDialAddin.cs
+END
+MediaBarAddIn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AddIn/MediaBarAddIn.cs
+END
+IClickToDialProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AddIn/IClickToDialProvider.cs
+END
+ClickToDialAddinFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AddIn/ClickToDialAddinFactory.cs
+END

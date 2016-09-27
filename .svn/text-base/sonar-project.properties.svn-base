@@ -1,0 +1,11 @@
+sonar.projectKey=com.avaya.ept.dw:rn  
+sonar.projectName=RightNow
+sonar.projectVersion=1.0.0-SNAPSHOT
+sources=.
+sonar.language=cs
+sonar.dotnet.visualstudio.solution.file=Oracle.RightNow.Cti.sln
+#sonar.donet.visualstudio.testProjectPattern=${test.project.pattern}
+#sonar.gallio.installDirectory=${gallio.install.dir}
+#sonar.gallio.coverage.tool=PartCover
+#sonar.gallio.reports.path=${gallio.report.dir}/${gallio.report.name.format}.xml
+sonar.fxcop.installDirectory=C:/build-dir/RTNOWCNXN-CLIENT-JOB1/target/fxcop/

@@ -1,0 +1,345 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" 
+    xmlns:converters="clr-namespace:Oracle.RightNow.Cti.MediaBar.Converters" 
+    xmlns:localization="clr-namespace:Oracle.RightNow.Cti.MediaBar.Properties"
+    xmlns:mediabar="clr-namespace:Oracle.RightNow.Cti.MediaBar"
+    xmlns:model="clr-namespace:Oracle.RightNow.Cti.Model;assembly=Oracle.RightNow.Cti" 
+    xmlns:common="clr-namespace:Oracle.RightNow.Cti.MediaBar"
+    x:Class="Oracle.RightNow.Cti.MediaBar.MediaBarView" Loaded="MediaBar_Loaded"
+    mc:Ignorable="d"  HorizontalAlignment="Stretch" Background="White" >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Oracle.RightNow.Cti.Mediabar;component/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:AgentStateToBrushConverter x:Key="AgentStateToBrushConverter"/>
+            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+            <converters:LoggedInStateToImageConverter x:Key="LoggedInStateToImageConverter"/>
+            <converters:MediaTypeToVisibilityConverter x:Key="MediaTypeToVisibilityConverter"/>
+            <converters:ConsoleTypeToVisibilityConverter x:Key="ConsoleTypeToVisibilityConverter"/>
+            <converters:ConsoleTypeEnhancedVisibilityconvertor x:Key="ConsoleTypeEnhancedVisibilityconvertor"/>
+            <converters:MediaTypeToImageConverter x:Key="MediaTypeToImageConverter"/>
+            <converters:InteractionStateToStringConverter x:Key="InteractionStateToStringConverter"/>
+            <converters:ConferenceListVisibilityConverter x:Key="ConferenceListVisibilityConverter"/>
+            <converters:InvertVisibilityConverter x:Key="InvertVisibilityConverter"/>
+            <!--<model:MediaType x:Key="MediaTypeVoice" >Voice</model:MediaType>-->
+
+            <DataTemplate x:Key="ItemSelectionDataTemplate">
+                <Grid Height="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0" Fill="{Binding Converter={StaticResource AgentStateToBrushConverter}}" Width="7" Margin="0,1" HorizontalAlignment="Left"/>
+                    <StackPanel Margin="2,0,2,0" Grid.Column="1" HorizontalAlignment="Left">
+                        <TextBlock Text="{Binding Name}" TextTrimming="CharacterEllipsis" FontSize="15"/>
+                        <TextBlock Text="{Binding Description}"  TextTrimming="CharacterEllipsis" FontSize="11" Foreground="Gray"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid HorizontalAlignment="Stretch" Height="48" >
+        <Grid.ColumnDefinitions>
+            <!--<ColumnDefinition/>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="110"/>-->
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="Auto"/>
+            <!--<ColumnDefinition Width="Auto" MinWidth="133"/>-->
+            <ColumnDefinition Width="Auto" MinWidth="133" />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--Information area-->
+        <Grid Background="White" Grid.Column="0" Margin="1"
+              HorizontalAlignment="Stretch" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,0">
+                <Image Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.info.voiceinteraction.png" Width="20" Height="16"
+                       Margin="5,0,5,0"/>
+                <TextBlock Text="{Binding CallCount}" FontFamily="Segoe UI" FontSize="16"/>
+                <Image Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.info.emailinteraction.png" Width="20" Height="16"
+                       Margin="10,0,5,0" Visibility="Collapsed" />
+                <TextBlock Text="{Binding EmailCount}" FontFamily="Segoe UI" FontSize="16" Visibility="Collapsed" />
+                <Image Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.info.webinteraction.png" Width="20" Height="16"
+                       Margin="10,0,5,0" Visibility="Collapsed" />
+                <TextBlock Text="{Binding WebIncidentCount}" FontFamily="Segoe UI" FontSize="16" Visibility="Collapsed" />
+
+            </StackPanel>
+            <TextBlock Text="{Binding InteractionTime}" Grid.Row="1"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Right"
+                       Margin="5,0"
+                       FontFamily="Segoe UI"
+                       FontSize="22"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Right"  Width="1" Margin="0,4,2,4" Fill="LightGray"/>
+
+
+
+        <TextBlock Grid.ColumnSpan="2" Grid.Column="1" Margin="5,14,2,14" Visibility="{Binding ElementName=InteractionDropdownList, Path=Visibility, Converter={StaticResource InvertVisibilityConverter}}"  VerticalAlignment="Center" FontSize="15" Text="{x:Static localization:Resources.AniorCall}" Height="20" ></TextBlock>
+        <!--Interaction List-->
+        <ComboBox Grid.Column="1" Name="InteractionDropdownList" IsSynchronizedWithCurrentItem="True"   common:ComboBoxHelper.ListenSelectionChanged="True"
+                  Visibility="{Binding HasInteractions, Converter={StaticResource BooleanToVisibilityConverter}}"
+                  Style="{DynamicResource MediaBarComboBox}" 
+                  Width="180"
+                  ItemsSource="{Binding Interactions}"
+                  SelectedItem="{Binding CurrentInteraction, Mode=TwoWay}" HorizontalAlignment="Right">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Grid.Column="2">
+                        <TextBlock FontSize="16">
+                            <TextBlock.Text>
+                                <PriorityBinding>
+                                    <Binding Path="Address"/>
+                                </PriorityBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                        <!--<TextBlock Text="{Binding Path=State, Converter={StaticResource InteractionStateToStringConverter},UpdateSourceTrigger=PropertyChanged}" FontSize="12" Foreground="Gray"/>-->
+                        <TextBlock FontSize="12" Foreground="Gray">
+                            <TextBlock.Text>
+                                <MultiBinding  Converter="{StaticResource InteractionStateToStringConverter}" Mode="TwoWay">
+                                    <Binding Path="State" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                                    <Binding Path="." Mode="TwoWay" UpdateSourceTrigger="PropertyChanged"/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            <ComboBox.ItemContainerStyle>
+                <Style  TargetType="{x:Type ComboBoxItem}">
+                    <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="Padding" Value="3,0,3,0"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                                <Grid Height="50" Visibility="{Binding AgentSelectable, Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=comboboxitem}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="48"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding Converter={StaticResource MediaTypeToImageConverter}}"/>
+                                    <!--<Rectangle Fill="{Binding Converter={StaticResource AgentStateToBrushConverter}}" Width="7" Margin="0,1" HorizontalAlignment="Left"/>-->
+                                    <Border Grid.Column="1" x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsHighlighted" Value="true">
+                                        <Setter Property="Background" TargetName="Bd" Value="LightGray"/>
+                                        <!--<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>-->
+                                    </Trigger>
+                                    <Trigger Property="IsEnabled" Value="false">
+                                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+
+        <!-- Conference Parties List Area -->
+        <Grid Background="White" Grid.Column="2" Margin="1" Visibility="{Binding ConferencePartiesList,Converter={StaticResource ConferenceListVisibilityConverter}}"
+              HorizontalAlignment="Stretch" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Right"  Height="40" Width="1" Fill="LightGray" Grid.Column="0"  Visibility="Collapsed" />
+            <TextBlock Text="{Binding ConferencePartiesList}" Grid.Column="1"
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch"
+                       Margin="5,0" Width="120"
+                       FontFamily="Segoe UI"
+                       FontStretch="Expanded"
+                       FontSize="10"
+                       TextWrapping="Wrap"
+                       />
+        </Grid>
+
+        <Rectangle HorizontalAlignment="Right" Grid.Column="2" Margin="0,4,2,4"  Width="1" Fill="LightGray"/>
+        <Border BorderThickness="1" BorderBrush="Black" Grid.ColumnSpan="4"/>
+        <StackPanel Grid.Column="3"  Orientation="Horizontal" Margin="0,1,1,1">
+            <!--<Rectangle Width="5" Fill="{Binding CurrentAgentState, Converter={StaticResource AgentStateToBrushConverter}}" Margin="1,1,3,1"/>-->
+
+
+            <ComboBox Style="{DynamicResource MediaBarComboBox}" IsSynchronizedWithCurrentItem="False"   common:ComboBoxHelper.ListenSelectionChanged="True"
+                      IsEnabled="{Binding CanChangeState}" Visibility="{Binding IsACD,Converter={StaticResource BooleanToVisibilityConverter}}"
+                      Width="200" Padding="0,3,0,3"
+                      ItemsSource="{Binding AgentStates,UpdateSourceTrigger=PropertyChanged}" 
+                      SelectedItem="{Binding CurrentAgentState,  Mode=TwoWay, UpdateSourceTrigger=LostFocus}" ToolTipService.ShowOnDisabled="True">
+                <ComboBox.ToolTip>
+                    <ToolTip>
+                        <StackPanel Margin="2,0,0,0" Grid.Column="1" HorizontalAlignment="Right">
+                            <TextBlock Text="{Binding Path=DataContext.CurrentAgentState.Name,RelativeSource={RelativeSource Self}}" FontSize="15"/>
+                            <TextBlock Text="{Binding Path=DataContext.CurrentAgentState.Description,RelativeSource={RelativeSource Self}}" FontSize="11" Foreground="Gray"/>
+                        </StackPanel>
+                    </ToolTip>
+                </ComboBox.ToolTip>
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="50">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="8"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Rectangle Grid.Column="0" Fill="{Binding Converter={StaticResource AgentStateToBrushConverter}}" Width="7" Margin="0,1" HorizontalAlignment="Left"/>
+                            <StackPanel Margin="2,0,2,0" Grid.Column="1" HorizontalAlignment="Left">
+                                <TextBlock Text="{Binding Name}"  FontSize="15"/>
+                                <TextBlock Text="{Binding Description}" HorizontalAlignment="Left"  TextTrimming="CharacterEllipsis" FontSize="11" Foreground="Gray"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                <ComboBox.ItemContainerStyle>
+                    <Style  TargetType="{x:Type ComboBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                        <Setter Property="Padding" Value="0,0,0,0"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                                    <Grid Height="50" Visibility="{Binding AgentSelectable, Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=comboboxitem}">
+                                        <Grid.ColumnDefinitions>
+                                            <!--<ColumnDefinition Width="5" x:Name="StatusColumn"/>-->
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <!--<Rectangle Fill="{Binding Converter={StaticResource AgentStateToBrushConverter}}" Width="7" Margin="0,1" HorizontalAlignment="Left"/>-->
+                                        <Border Grid.Column="0" x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" ContentTemplate="{StaticResource ItemSelectionDataTemplate}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                        </Border>
+                                    </Grid>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsHighlighted" Value="true">
+                                            <Setter Property="Background" TargetName="Bd" Value="LightGray"/>
+                                            <!--<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>-->
+                                        </Trigger>
+                                        <Trigger Property="IsEnabled" Value="false">
+                                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ComboBox.ItemContainerStyle>
+            </ComboBox>
+            <Rectangle HorizontalAlignment="Right" Width="1" Height="40" Visibility="{Binding IsACD,Converter={StaticResource BooleanToVisibilityConverter}}" Fill="LightGray"/>
+            <!--<ItemsControl >
+            <ItemsControl.ItemTemplate>
+            <DataTemplate>
+            <Button Width="35" Height="35" Padding="0" Style="{DynamicResource MediaBarButtonStyle}" >
+            <Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.connect.png"/>
+            </Button>
+            </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+            <StackPanel Orientation="Horizontal"/>
+            </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            </ItemsControl>-->
+
+            <!--Complete interaction-->
+            <Button Width="45" Height="48" Padding="0"
+                    x:Name="btnDial"
+                    Visibility="{Binding CanMakeCall, Converter={StaticResource BooleanToVisibilityConverter}}"
+                    Style="{DynamicResource MediaBarButtonStyle}" 
+                    ToolTip="Dial"
+                    Command="{Binding ShowDialOptionsCommand}">
+                <Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.dialpad.png"/>
+            </Button>
+            <Popup IsOpen="{Binding ShowDialOptions}" 
+                   StaysOpen="False"
+                   PlacementTarget="{Binding ElementName=btnDial}"  
+                   MinWidth="100">
+                <Grid Background="White">
+                    <Border BorderBrush="Black" BorderThickness="1"/>
+                    <StackPanel>
+                        <ItemsControl ItemsSource="{Binding ContextContacts}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel></StackPanel>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Height="30" Padding="0"
+                                        Style="{DynamicResource MediaBarButtonStyle}" 
+                                        ToolTip="Dial"
+                                        Command="{Binding DialCommand}"
+                                        CommandParameter="{Binding}">
+                                        <TextBlock Text="{Binding Name}"/>
+                                    </Button>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        <Rectangle Height="1" Margin="1,3" Fill="LightGray"/>
+                        <Button Height="30" Padding="0"
+                                        Style="{DynamicResource MediaBarButtonStyle}" 
+                                        Command="{Binding ShowDialPadComand}">
+                            <Grid>
+                                <TextBlock Text="Open dial pad" HorizontalAlignment="Left"/>
+                            </Grid>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Popup>
+
+            <!--Voice Controle-->
+            <StackPanel  Visibility="{Binding IsEnhancedUI, Converter={StaticResource ConsoleTypeToVisibilityConverter}}">
+                <mediabar:VoiceBarView Visibility="{Binding CurrentInteraction, Converter={StaticResource MediaTypeToVisibilityConverter}, ConverterParameter={x:Static model:MediaType.Voice}}"></mediabar:VoiceBarView>
+            </StackPanel>
+            <!--<StackPanel  Visibility="{Binding isNotEnhanced, Converter={StaticResource ConsoleTypeEnhancedVisibilityconvertor}}" >-->
+            <StackPanel  Visibility="{Binding IsNotEnhanced, Converter={StaticResource ConsoleTypeEnhancedVisibilityconvertor}}">
+                <mediabar:VoiceBarViewEnhanced Visibility="{Binding CurrentInteraction, Converter={StaticResource MediaTypeToVisibilityConverter}, ConverterParameter={x:Static model:MediaType.Voice}}"></mediabar:VoiceBarViewEnhanced>
+            </StackPanel>
+            
+            
+                
+
+                <!--Visibility="{Binding CanCompleteInteraction, Converter={StaticResource BooleanToVisibilityConverter}}"-->
+            <Button Width="45" Height="48" Padding="0"                    
+                    Style="{DynamicResource MediaBarButtonStyle}" 
+                    ToolTip="Complete interaction" Visibility="Collapsed"
+                    Command="{Binding CompleteInteractionCommand}">
+                <Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.complete.png"/>
+            </Button>
+            <!--Record association-->
+            <!--<Button Width="48" Height="48" Padding="0"
+                    Visibility="Collapsed"
+                    Style="{DynamicResource MediaBarButtonStyle}" 
+                    ToolTip="Associate current record to interaction"
+                    Command="{Binding AssociateRecordCommand}">
+                <Image  Source="/Oracle.RightNow.Cti.Mediabar;component/Images/mediabar.record.add.png"/>
+            </Button>-->
+            <Rectangle Height="40" Width="1" Fill="LightGray"/>
+            <!--Complete interaction-->
+            <Button Width="45" Height="48" Padding="0" 
+                    IsEnabled="{Binding CanChangeConnectionState}"
+                    Style="{DynamicResource MediaBarButtonStyle}" 
+                    ToolTip="{Binding ConnectionTooltip}"
+                    Command="{Binding ShowAgentLoginCommand}">
+                <Image  Source="{Binding IsAgentLoggedIn, Converter={StaticResource LoggedInStateToImageConverter}}"/>
+            </Button>
+            <StackPanel HorizontalAlignment="Left" Margin="3,0,0,0" Background="{Binding CurrentAgentState, Converter={StaticResource AgentStateToBrushConverter}}">
+                <TextBlock FontFamily="Segoe UI" Margin="2" FontSize="18" Text="{Binding AgentName}" ToolTip="{Binding AgentName}" Width="130" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" />
+                <TextBlock FontFamily="Segoe UI" Margin="2,0,0,2" FontSize="12" Text="{Binding Extension}" ToolTip="{Binding Extension}"  Width="130" HorizontalAlignment="Left" TextTrimming="CharacterEllipsis" Foreground="Black"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

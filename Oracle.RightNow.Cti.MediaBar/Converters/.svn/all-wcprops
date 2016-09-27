@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/rtnowcnxn/!svn/ver/1178/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters
+END
+ContactToStringConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/ContactToStringConverter.cs
+END
+AgentStateToBrushConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/AgentStateToBrushConverter.cs
+END
+MediaTypeToImageConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/MediaTypeToImageConverter.cs
+END
+BooleanToVisibilityConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/BooleanToVisibilityConverter.cs
+END
+InteractionStateToStringConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/InteractionStateToStringConverter.cs
+END
+ConferenceListVisibilityConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/ConferenceListVisibilityConverter.cs
+END
+MediaTypeToStringConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/MediaTypeToStringConverter.cs
+END
+ConsoleTypeEnhancedVisibilityconvertor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/rtnowcnxn/!svn/ver/1178/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/ConsoleTypeEnhancedVisibilityconvertor.cs
+END
+MediaTypeToVisibilityConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/MediaTypeToVisibilityConverter.cs
+END
+ConsoleTypeToVisibilityConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/rtnowcnxn/!svn/ver/1178/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/ConsoleTypeToVisibilityConverter.cs
+END
+InvertVisibilityConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/InvertVisibilityConverter.cs
+END
+LoggedInStateToImageConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1173/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/LoggedInStateToImageConverter.cs
+END
+BinaryFlagToBooleanConverter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/Converters/BinaryFlagToBooleanConverter.cs
+END

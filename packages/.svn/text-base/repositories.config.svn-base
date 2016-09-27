@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+  <repository path="..\Oracle.RightNow.Cti.Administration\packages.config" />
+  <repository path="..\Oracle.RightNow.Cti.MediaBar\packages.config" />
+  <repository path="..\Oracle.RightNow.Cti.ScreenPopHandlers.Samples\packages.config" />
+  <repository path="..\Oracle.RightNow.Cti.Simulator.Controller\packages.config" />
+  <repository path="..\Oracle.RightNow.Cti.Simulator\packages.config" />
+  <repository path="..\Oracle.RightNow.Cti\packages.config" />
+</repositories>

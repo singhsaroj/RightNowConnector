@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Configuration
+END
+IConfigurationProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Configuration/IConfigurationProvider.cs
+END
+RightNowConnectConfigurationProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Configuration/RightNowConnectConfigurationProvider.cs
+END

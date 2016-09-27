@@ -1,0 +1,266 @@
+﻿<Window x:Class="Oracle.RightNow.Cti.MediaBar.Views.TransferDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converters="clr-namespace:Oracle.RightNow.Cti.MediaBar.Converters" 
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        Title="{Binding Caption}" Height="420" Width="259" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>                
+                <ResourceDictionary Source="/Oracle.RightNow.Cti.Mediabar;component/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibility"/>
+            <SolidColorBrush x:Key="ApplicationSemiSubtleBrush" Color="#FFBDBDBD" Opacity="0.8"/>
+            <System:Double x:Key="ApplicationFontSizeSmall">12</System:Double>
+            <System:Double x:Key="ApplicationFontSizeMediumLarge">25.333</System:Double>
+            <converters:ContactToStringConverter x:Key="ContactToStringConverter"/>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="57"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding Caption}" 
+                   Height="30"
+                   VerticalAlignment="Top"
+                   FontFamily="Segoe UI" 
+                   FontSize="22" 
+                   Margin="10,10,10,0"/>
+        <TextBlock Text="Please select a contact or type the destination number" 
+                   FontSize="12"
+                   TextWrapping="Wrap"
+                   Margin="10,38,10,12"
+                   Foreground="Gray"/>
+        <TextBlock Name="error" FontSize="12" Focusable="True"
+                   TextWrapping="Wrap"
+                   Margin="3"
+                   Grid.Row="1"
+                   Foreground="Red"/>
+        <TextBox Grid.Row="2"
+                  Name="cbTargetNumber"
+                  Style="{x:Null}"
+                  VerticalAlignment="Top"
+                  Margin="5,5,5,0"                  
+                  Text="{Binding UserInput,UpdateSourceTrigger=PropertyChanged}" 
+                  Height="30" >
+            <TextBox.InputBindings>
+                <KeyBinding Key="Enter"    Command="{Binding AcceptCommand}" />
+                <KeyBinding Key="Escape"    Command="{Binding CancelCommand}" />
+            </TextBox.InputBindings>
+        </TextBox>
+        <!--<ComboBox Grid.Row="1"
+                  Name="cbTargetNumber"
+                  Style="{x:Null}"
+                  VerticalAlignment="Top"
+                  Margin="5,5,5,0"
+                  ItemsSource="{Binding Contacts}"
+                  SelectedItem="{Binding SelectedContact}"
+                  Text="{Binding UserInput}"
+                  Height="26" IsEditable="True">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            <ComboBox.ItemContainerStyle>
+                <Style  TargetType="{x:Type ComboBoxItem}">
+                    <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="Padding" Value="3,0,3,0"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ComboBoxItem}">
+                                <Grid Height="20">
+                                    <Border  x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsHighlighted" Value="true">
+                                        <Setter Property="Background" TargetName="Bd" Value="LightGray"/>-->
+                                        <!--<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>-->
+                                    <!--</Trigger>
+                                    <Trigger Property="IsEnabled" Value="false">
+                                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>-->
+        <Grid Grid.Row="3" Width="250" HorizontalAlignment="Center" Margin="2,0,1,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="42"/>
+                <RowDefinition Height="42"/>
+                <RowDefinition Height="42"/>
+                <RowDefinition Height="42"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="1"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="1" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource MediaBarButtonStyle}" Grid.Column="1" Grid.Row="0" Margin="3"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="2"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="2" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="ABC" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="2" Grid.Row="0"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="3"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="3" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="DEF" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="0" Grid.Row="1"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="4"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="4" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="GHI" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="1" Grid.Row="1"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="5"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="5" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="JKL" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="2" Grid.Row="1"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="6"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="6" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="MNO" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="0" Grid.Row="2"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="7"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="7" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="PQRS" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="1" Grid.Row="2"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="8"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="8" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="TUV" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="2" Grid.Row="2"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="9"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="9" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="WXYZ" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="0" Grid.Row="3"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="*"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <TextBlock Text="*" FontSize="45" VerticalAlignment="Center" Height="50"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="1" Grid.Row="3"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="0"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="0" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock Text="+" Width="32" FontSize="{StaticResource ApplicationFontSizeSmall}" 
+                               VerticalAlignment="Center" 
+                               Margin="5" 
+                               Foreground="{StaticResource ApplicationSemiSubtleBrush}"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="3"  Grid.Column="2" Grid.Row="3"
+                    Command="{Binding DigitInputCommand}"
+                    CommandParameter="#"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="#" FontSize="{StaticResource ApplicationFontSizeMediumLarge}" VerticalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Right" Width="160">
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="5"  Grid.Row="3"
+                    Name="btnTransfer"
+                    Height="26"
+                    Width="70"
+                    Command="{Binding AcceptCommand}"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1" Content="{Binding BtnText}"> 
+            </Button>
+            <Button Style="{StaticResource MediaBarButtonStyle}" Margin="5"  Grid.Row="3"
+                    Height="26"
+                    Width="70"
+                    Command="{Binding CancelCommand}"
+                    BorderBrush="{StaticResource ButtonNormalBorder}" BorderThickness="1">
+                _Cancel
+            </Button>
+        </StackPanel>
+        <RadioButton Name="radioBlindTransfer" Content="Blind" HorizontalAlignment="Left" Height="16" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="78" Visibility="{Binding ShowTransferOptions,Converter={StaticResource BooleanToVisibility}}" IsChecked = "{Binding IsBlindTransfer}"/>
+        <RadioButton Name="radioConsultTransfer" Content="Consult" HorizontalAlignment="Left" Height="21" Margin="10,0,0,3" Grid.Row="4" VerticalAlignment="Bottom" Width="78" Visibility="{Binding ShowTransferOptions,Converter={StaticResource BooleanToVisibility}}" IsChecked = "{Binding IsConsultTransfer}" />
+    </Grid>
+</Window>

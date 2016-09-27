@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\saroj.singh\AppData\Local\Apps\2.0\EX28NM82.6QB\NNNAMW50.3EO\righ..vaya_0dd5c061fc4ec114_000f.0005_a667c258a257c0f8\RightNow.CX.exe</StartProgram>
+    <StartArguments>auto=true uname=Admin1 pword=Admin1234 launch=http://avaya2.rightnowdemo.com/cgi-bin/avaya.cfg dbname=avaya
+</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\Fabio\AppData\Local\Apps\2.0\9T35KCLG.W38\X4Z2QV6N.ZL6\righ..0812_a97a87e43982fbb5_000c.0008_ef6683b8429d2595\RightNow.CX.exe</StartProgram>
+    <StartArguments>auto=true uname=fcavalcante pword=password1 launch=http://fabio0812.rightnowdemo.com/cgi-bin/fabio0812.cfg dbname=fabio0812
+</StartArguments>
+  </PropertyGroup>
+</Project>

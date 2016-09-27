@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider
+END
+IncidentProcessor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/IncidentProcessor.cs
+END
+NotifyingObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/NotifyingObject.cs
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/packages.config
+END
+Agent.cs
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Agent.cs
+END
+INotificationClient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/INotificationClient.cs
+END
+Device.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Device.cs
+END
+SwitchClient.cs
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/SwitchClient.cs
+END
+InteractionType.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/InteractionType.cs
+END
+SwitchAgentState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/SwitchAgentState.cs
+END
+SwitchInteraction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/SwitchInteraction.cs
+END
+CtiServiceSwitch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/CtiServiceSwitch.cs
+END
+SwitchInteractionState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/SwitchInteractionState.cs
+END
+Oracle.RightNow.Cti.CtiServiceProvider.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.CtiServiceProvider/Oracle.RightNow.Cti.CtiServiceProvider.csproj
+END

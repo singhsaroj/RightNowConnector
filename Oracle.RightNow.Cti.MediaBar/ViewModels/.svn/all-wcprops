@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels
+END
+ViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/ViewModel.cs
+END
+MediaBarViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/MediaBarViewModel.cs
+END
+TransferDialogViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/TransferDialogViewModel.cs
+END
+AgentLoginViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/AgentLoginViewModel.cs
+END
+ToastViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/ToastViewModel.cs
+END
+UCReasonCodeViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/UCReasonCodeViewModel.cs
+END
+DelegateCommand.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.MediaBar/ViewModels/DelegateCommand.cs
+END

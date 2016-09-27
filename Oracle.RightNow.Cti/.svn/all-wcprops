@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti
+END
+packages.config
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/packages.config
+END
+Oracle.RightNow.Cti.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Oracle.RightNow.Cti.csproj
+END
+IContactProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/IContactProvider.cs
+END
+app.config
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/app.config
+END
+DemoServiceProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/DemoServiceProvider.cs
+END
+ICredentialsProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/ICredentialsProvider.cs
+END
+Oracle.RightNow.Cti.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Oracle.RightNow.Cti.csproj.user
+END
+ITelephonyProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/ITelephonyProvider.cs
+END
+StaffAccountInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/StaffAccountInfo.cs
+END
+CISpecification.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/rtnowcnxn/!svn/ver/1163/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/CISpecification.cs
+END
+NotifyingObject.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/NotifyingObject.cs
+END
+AsyncObservableCollection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/AsyncObservableCollection.cs
+END
+ExceptionHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/ExceptionHelper.cs
+END
+Global.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/Global.cs
+END
+StandardAgentStates.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/StandardAgentStates.cs
+END
+RightNowObjectProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/RightNowObjectProvider.cs
+END
+IInteractionProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/IInteractionProvider.cs
+END
+IScreenPopHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/IScreenPopHandler.cs
+END
+IAgent.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/IAgent.cs
+END
+CredentialsProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/CredentialsProvider.cs
+END
+IncidentInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/rtnowcnxn/!svn/ver/1173/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/IncidentInfo.cs
+END
+InteractionManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/rtnowcnxn/!svn/ver/1174/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti/InteractionManager.cs
+END

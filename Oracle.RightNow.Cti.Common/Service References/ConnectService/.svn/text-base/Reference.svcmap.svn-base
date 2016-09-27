@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2ced5b74-68bb-4795-a766-4ea38a55328c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?wsdl=generic" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="soap.xsd" MetadataType="Schema" ID="98f96ca2-bba2-47d6-935e-f67ff446db4d" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=generic" />
+    <MetadataFile FileName="soap1.xsd" MetadataType="Schema" ID="a021fe43-63c4-4d3a-9a6f-d9e9b6cf2adf" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=messagesgeneric" />
+    <MetadataFile FileName="soap2.xsd" MetadataType="Schema" ID="4d3252a3-05f6-44e7-aeeb-98b09e2e848f" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=nullfields" />
+    <MetadataFile FileName="soap3.xsd" MetadataType="Schema" ID="2d9159bf-1431-46b1-a77b-17ed29cc3d6b" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=faults" />
+    <MetadataFile FileName="RightNow.wsdl" MetadataType="Wsdl" ID="cf2831c6-2c32-42c3-8c86-1bd8928bf8c7" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?wsdl=generic" />
+    <MetadataFile FileName="soap4.xsd" MetadataType="Schema" ID="ddbe7989-d4fb-4abd-b104-fa79726db5f5" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=metadata" />
+    <MetadataFile FileName="soap5.xsd" MetadataType="Schema" ID="91b57fc3-8a93-4190-8ab8-c5c739a74273" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=objects" />
+    <MetadataFile FileName="soap6.xsd" MetadataType="Schema" ID="18eb3ceb-e971-454a-867c-7783784c96c7" SourceId="1" SourceUrl="http://avaya2.rightnowdemo.com/cgi-bin/avaya2.cfg/services/soap?xsd=base" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

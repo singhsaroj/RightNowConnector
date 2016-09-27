@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService
+END
+soap1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap1.xsd
+END
+soap2.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap2.xsd
+END
+Oracle.RightNow.Cti.Common.ConnectService.RNObject.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.RNObject.datasource
+END
+Oracle.RightNow.Cti.Common.ConnectService.MetaDataClass.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.MetaDataClass.datasource
+END
+soap3.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap3.xsd
+END
+Oracle.RightNow.Cti.Common.ConnectService.NamedIDWithParent.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.NamedIDWithParent.datasource
+END
+soap4.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap4.xsd
+END
+soap5.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap5.xsd
+END
+soap6.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap6.xsd
+END
+Reference.svcmap
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Reference.svcmap
+END
+configuration91.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/configuration91.svcinfo
+END
+Oracle.RightNow.Cti.Common.ConnectService.BatchResponseItem.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.BatchResponseItem.datasource
+END
+Oracle.RightNow.Cti.Common.ConnectService.CSVTableSet.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.CSVTableSet.datasource
+END
+soap.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/soap.xsd
+END
+Reference.cs
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Reference.cs
+END
+RightNow.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/RightNow.wsdl
+END
+Oracle.RightNow.Cti.Common.ConnectService.QueryResultData.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.QueryResultData.datasource
+END
+Oracle.RightNow.Cti.Common.ConnectService.NamedID.datasource
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/Oracle.RightNow.Cti.Common.ConnectService.NamedID.datasource
+END
+configuration.svcinfo
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.Common/Service%20References/ConnectService/configuration.svcinfo
+END

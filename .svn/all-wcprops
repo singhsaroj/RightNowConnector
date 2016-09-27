@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/rtnowcnxn/!svn/ver/1179/trunk/AES.Oracle.RightNow.Connector
+END
+Packages.dgml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Packages.dgml
+END
+RightNowObjectAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/RightNowObjectAttribute.cs
+END
+sonar-project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/rtnowcnxn/!svn/ver/1171/trunk/AES.Oracle.RightNow.Connector/sonar-project.properties
+END
+SharedAssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/SharedAssemblyInfo.cs
+END
+RightNowObjectProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/RightNowObjectProvider.cs
+END
+CredentialProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/CredentialProvider.cs
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/rtnowcnxn/!svn/ver/1170/trunk/AES.Oracle.RightNow.Connector/pom.xml
+END
+Oracle.RightNow.Cti.sln
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.sln
+END

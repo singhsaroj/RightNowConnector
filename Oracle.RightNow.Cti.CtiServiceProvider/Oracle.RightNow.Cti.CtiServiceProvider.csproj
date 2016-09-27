@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36925B77-D83A-471A-8037-EFE25324527E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Oracle.RightNow.Cti.Simulator</RootNamespace>
+    <AssemblyName>Oracle.RightNow.Cti.Simulator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="RightNow.AddIns.AddInViews">
+      <HintPath>..\packages\RightNowConnectDesktop.12.5.0.1\lib\net40\RightNow.AddIns.AddInViews.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent.cs" />
+    <Compile Include="Device.cs" />
+    <Compile Include="IncidentProcessor.cs" />
+    <Compile Include="INotificationClient.cs" />
+    <Compile Include="InteractionType.cs" />
+    <Compile Include="Messaging\IMessagingProvider.cs" />
+    <Compile Include="Messaging\MessageData.cs" />
+    <Compile Include="Messaging\MessageHandlers\AgentStateMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\ConnectMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\CreateInteractionMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\DeviceInfoMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\DisconnectMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\GetSwitchStateMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\IMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\InteractionRequestMessageHandler.cs" />
+    <Compile Include="Messaging\MessageHandlers\InteractionTransferMessageHandler.cs" />
+    <Compile Include="Messaging\Messages\AgentStateMessage.cs" />
+    <Compile Include="Messaging\Messages\ConnectMessage.cs" />
+    <Compile Include="Messaging\Messages\CreateInteractionMessage.cs" />
+    <Compile Include="Messaging\Messages\DeviceInfoMessage.cs" />
+    <Compile Include="Messaging\Messages\GetDeviceInfoMessage.cs" />
+    <Compile Include="Messaging\Messages\InteractionMessageAction.cs" />
+    <Compile Include="Messaging\Messages\InteractionRequestAction.cs" />
+    <Compile Include="Messaging\Messages\InteractionTransferMessage.cs" />
+    <Compile Include="Messaging\Messages\Message.cs" />
+    <Compile Include="Messaging\Messages\InteractionMessage.cs" />
+    <Compile Include="Messaging\Messages\InteractionRequestMessage.cs" />
+    <Compile Include="Messaging\Messages\SwitchMessage.cs" />
+    <Compile Include="Messaging\Messages\SwitchStateMessage.cs" />
+    <Compile Include="Messaging\RemoteMessagingProvider.cs" />
+    <Compile Include="Messaging\SimpleMessagingProvider.cs" />
+    <Compile Include="Messaging\SwitchMessageEventArgs.cs" />
+    <Compile Include="Messaging\SwitchMessageType.cs" />
+    <Compile Include="NotifyingObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceModel\KnownAssemblyAttribute.cs" />
+    <Compile Include="CtiServiceSwitch.cs" />
+    <Compile Include="SwitchAgentState.cs" />
+    <Compile Include="SwitchClient.cs" />
+    <Compile Include="SwitchInteraction.cs" />
+    <Compile Include="SwitchInteractionState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oracle.RightNow.Cti.Logger\Oracle.RightNow.Cti.Logger.csproj">
+      <Project>{057d5517-9257-4400-aced-b99555701138}</Project>
+      <Name>Oracle.RightNow.Cti.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Oracle.RightNow.Cti\Oracle.RightNow.Cti.csproj">
+      <Project>{d455f9a5-1a6a-4761-9268-50eb8d87f94d}</Project>
+      <Name>Oracle.RightNow.Cti</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

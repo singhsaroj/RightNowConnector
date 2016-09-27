@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/rtnowcnxn/!svn/ver/1175/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration
+END
+RightNowScreenPopProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/RightNowScreenPopProvider.cs
+END
+IScreenPopConfigurationContentPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/IScreenPopConfigurationContentPane.cs
+END
+Oracle.RightNow.Cti.ScreenPopConfiguration.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/Oracle.RightNow.Cti.ScreenPopConfiguration.csproj
+END
+ScreenPopConfigurationContentPane.cs
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/ScreenPopConfigurationContentPane.cs
+END
+ScreenPopConfigurationNavigationItem.cs
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/ScreenPopConfigurationNavigationItem.cs
+END
+NameValueViewModel.cs
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/NameValueViewModel.cs
+END
+ScreenPopProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/rtnowcnxn/!svn/ver/1150/trunk/AES.Oracle.RightNow.Connector/Oracle.RightNow.Cti.ScreenPopConfiguration/ScreenPopProvider.cs
+END
